@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		A0DF734819F57FB500A25A3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DF734719F57FB500A25A3F /* AppDelegate.swift */; };
-		A0DF734A19F57FB500A25A3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DF734919F57FB500A25A3F /* ViewController.swift */; };
 		A0DF734D19F57FB500A25A3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0DF734B19F57FB500A25A3F /* Main.storyboard */; };
 		A0DF734F19F57FB500A25A3F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0DF734E19F57FB500A25A3F /* Images.xcassets */; };
 		A0DF735219F57FB500A25A3F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0DF735019F57FB500A25A3F /* LaunchScreen.xib */; };
 		A0DF735E19F57FB500A25A3F /* TempleMatchingProj3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DF735D19F57FB500A25A3F /* TempleMatchingProj3Tests.swift */; };
+		A0DF736B19F5806100A25A3F /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DF736A19F5806100A25A3F /* CollectionViewController.swift */; };
+		A0DF736D19F5A87500A25A3F /* TemplePictureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DF736C19F5A87500A25A3F /* TemplePictureCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +30,14 @@
 		A0DF734219F57FB500A25A3F /* TempleMatchingProj3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempleMatchingProj3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DF734619F57FB500A25A3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0DF734719F57FB500A25A3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A0DF734919F57FB500A25A3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A0DF734C19F57FB500A25A3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0DF734E19F57FB500A25A3F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A0DF735119F57FB500A25A3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A0DF735719F57FB500A25A3F /* TempleMatchingProj3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TempleMatchingProj3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DF735C19F57FB500A25A3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0DF735D19F57FB500A25A3F /* TempleMatchingProj3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempleMatchingProj3Tests.swift; sourceTree = "<group>"; };
+		A0DF736A19F5806100A25A3F /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		A0DF736C19F5A87500A25A3F /* TemplePictureCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplePictureCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +79,10 @@
 		A0DF734419F57FB500A25A3F /* TempleMatchingProj3 */ = {
 			isa = PBXGroup;
 			children = (
-				A0DF734719F57FB500A25A3F /* AppDelegate.swift */,
-				A0DF734919F57FB500A25A3F /* ViewController.swift */,
-				A0DF734B19F57FB500A25A3F /* Main.storyboard */,
+				A0DF736719F57FCF00A25A3F /* Controllers */,
+				A0DF736819F57FD800A25A3F /* Models */,
+				A0DF736919F57FDF00A25A3F /* Views */,
 				A0DF734E19F57FB500A25A3F /* Images.xcassets */,
-				A0DF735019F57FB500A25A3F /* LaunchScreen.xib */,
 				A0DF734519F57FB500A25A3F /* Supporting Files */,
 			);
 			path = TempleMatchingProj3;
@@ -90,6 +91,7 @@
 		A0DF734519F57FB500A25A3F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A0DF734719F57FB500A25A3F /* AppDelegate.swift */,
 				A0DF734619F57FB500A25A3F /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -110,6 +112,31 @@
 				A0DF735C19F57FB500A25A3F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A0DF736719F57FCF00A25A3F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A0DF736A19F5806100A25A3F /* CollectionViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A0DF736819F57FD800A25A3F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A0DF736919F57FDF00A25A3F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A0DF735019F57FB500A25A3F /* LaunchScreen.xib */,
+				A0DF734B19F57FB500A25A3F /* Main.storyboard */,
+				A0DF736C19F5A87500A25A3F /* TemplePictureCollectionViewCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +239,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0DF734A19F57FB500A25A3F /* ViewController.swift in Sources */,
+				A0DF736B19F5806100A25A3F /* CollectionViewController.swift in Sources */,
 				A0DF734819F57FB500A25A3F /* AppDelegate.swift in Sources */,
+				A0DF736D19F5A87500A25A3F /* TemplePictureCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
