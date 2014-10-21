@@ -34,19 +34,19 @@
                                             <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddN-vL-hsP">
+                                                <label userInteractionEnabled="NO" alpha="0.49999999999999961" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddN-vL-hsP">
                                                     <rect key="frame" x="8" y="117" width="134" height="19.5"/>
-                                                    <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="0.27000000000000002" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" id="Q4Z-Yi-BVD"/>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" id="X1m-p6-nu5"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8y1-fZ-6bU">
-                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8y1-fZ-6bU">
+                                                    <rect key="frame" x="13" y="13" width="124" height="124"/>
                                                     <state key="normal" title="Button"/>
                                                 </button>
                                             </subviews>
@@ -55,8 +55,12 @@
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="centerX" secondItem="ddN-vL-hsP" secondAttribute="centerX" id="MjI-Tf-cfv"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="8y1-fZ-6bU" secondAttribute="trailing" constant="5" id="NIQ-Tt-y9p"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="ddN-vL-hsP" secondAttribute="trailing" id="Ztx-kH-rOC"/>
                                             <constraint firstItem="ddN-vL-hsP" firstAttribute="leading" secondItem="0Po-pu-DLA" secondAttribute="leadingMargin" id="kRb-JD-vrb"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="8y1-fZ-6bU" secondAttribute="bottom" constant="5" id="kUR-gZ-yO9"/>
+                                            <constraint firstItem="8y1-fZ-6bU" firstAttribute="leading" secondItem="0Po-pu-DLA" secondAttribute="leadingMargin" constant="5" id="oE7-Og-0Y6"/>
+                                            <constraint firstItem="8y1-fZ-6bU" firstAttribute="top" secondItem="0Po-pu-DLA" secondAttribute="topMargin" constant="5" id="tW2-n5-E4W"/>
                                             <constraint firstItem="ddN-vL-hsP" firstAttribute="bottom" secondItem="0Po-pu-DLA" secondAttribute="bottomMargin" constant="-5" id="wEJ-5O-RFg"/>
                                         </constraints>
                                     </collectionViewCell>
@@ -69,9 +73,11 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ehE-If-qjH">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <items>
+                                    <barButtonItem title="Reset" id="xQo-oD-Pex"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="jMD-ix-oL3"/>
-                                    <barButtonItem title="Study" id="QS7-QN-zsE"/>
+                                    <barButtonItem title="Correct: 0 Incorrect: 0" id="HgH-Hi-5mw"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="DrT-CM-btc"/>
+                                    <barButtonItem title="Study" id="QS7-QN-zsE"/>
                                 </items>
                             </toolbar>
                         </subviews>
