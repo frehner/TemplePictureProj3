@@ -9,18 +9,24 @@
 import UIKit
 
 class CollectionViewController : UIViewController, UICollectionViewDataSource, UITableViewDataSource {
+    // MARK: Properties
+    
+    let templeCollection = TempleCollection()
+    
     
     // MARK: Collection view data source required
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         //return the number of items that will be repeated
-        return 15
+        return templeCollection.TEMPLES.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         var cell = collectionView.dequeueReusableCellWithReuseIdentifier("TemplePictureCell", forIndexPath: indexPath) as UICollectionViewCell
         
         if let cardCell = cell as? TemplePictureCollectionViewCell {
-            cardCell.templeLabel.text = "Cell \(indexPath.row + 1)"
+            let tempTemple = templeCollection.TEMPLES[indexPath.row]
+            cardCell.templeButton.setBackgroundImage(UIImage(named: tempTemple.filename), forState: .Normal)
+            cardCell.templeLabel.text = "\(tempTemple.name)"
         }
         
         return cell
@@ -30,12 +36,12 @@ class CollectionViewController : UIViewController, UICollectionViewDataSource, U
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("TempleNameTableCell", forIndexPath: indexPath) as UITableViewCell
         
-        cell.textLabel.text = "Row \(indexPath.row + 1)"
+        cell.textLabel.text = "\(templeCollection.TEMPLES[indexPath.row].name)"
         return cell
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return templeCollection.TEMPLES.count
     }
 
 }

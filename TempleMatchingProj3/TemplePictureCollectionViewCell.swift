@@ -12,4 +12,5 @@ class TemplePictureCollectionViewCell: UICollectionViewCell {
     
     // MARK: Outlets
     @IBOutlet weak var templeLabel: UILabel!
+    @IBOutlet weak var templeButton: UIButton!
 }

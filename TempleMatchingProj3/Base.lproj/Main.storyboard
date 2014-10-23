@@ -47,7 +47,6 @@
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8y1-fZ-6bU">
                                                     <rect key="frame" x="5" y="5" width="140" height="140"/>
-                                                    <state key="normal" title="Button"/>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -72,6 +71,7 @@
                                             </mask>
                                         </variation>
                                         <connections>
+                                            <outlet property="templeButton" destination="8y1-fZ-6bU" id="NrH-Dy-jGw"/>
                                             <outlet property="templeLabel" destination="ddN-vL-hsP" id="eEi-jT-Igo"/>
                                         </connections>
                                     </collectionViewCell>
