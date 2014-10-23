@@ -10,4 +10,6 @@ import UIKit
 
 class TemplePictureCollectionViewCell: UICollectionViewCell {
     
+    // MARK: Outlets
+    @IBOutlet weak var templeLabel: UILabel!
 }

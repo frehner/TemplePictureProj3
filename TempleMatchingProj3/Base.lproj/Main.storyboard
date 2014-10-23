@@ -71,6 +71,9 @@
                                                 <exclude reference="tW2-n5-E4W"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <outlet property="templeLabel" destination="ddN-vL-hsP" id="eEi-jT-Igo"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -115,7 +118,7 @@
                                     <constraint firstAttribute="width" constant="200" id="a5r-GY-Ih7"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TempleNameTableCell" id="u6Z-zT-gP6">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TempleNameTableCell" id="u6Z-zT-gP6" customClass="TempleNameTableCell" customModule="TempleMatchingProj3" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u6Z-zT-gP6" id="d2s-SG-Oet">
@@ -123,6 +126,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="8zS-vr-ByX"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="UTf-oH-o5Z"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
