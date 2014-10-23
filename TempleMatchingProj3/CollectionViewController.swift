@@ -10,9 +10,24 @@ import UIKit
 
 class CollectionViewController : UIViewController, UICollectionViewDataSource, UITableViewDataSource {
     // MARK: Properties
-    
     let templeCollection = TempleCollection()
+    var hidePictureLabels = true
     
+    // MARK: Outlets
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    // MARK: Actions
+    @IBAction func matchStudySegment(sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0 {
+            //match mode
+            hidePictureLabels = true
+            collectionView.reloadData()
+        } else {
+            //study mode
+            hidePictureLabels = false
+            collectionView.reloadData()
+        }
+    }
     
     // MARK: Collection view data source required
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -27,6 +42,7 @@ class CollectionViewController : UIViewController, UICollectionViewDataSource, U
             let tempTemple = templeCollection.TEMPLES[indexPath.row]
             cardCell.templeImage.image = UIImage(named: tempTemple.filename)
             cardCell.templeLabel.text = "\(tempTemple.name)"
+            cardCell.templeLabel.hidden = hidePictureLabels
         }
         
         return cell

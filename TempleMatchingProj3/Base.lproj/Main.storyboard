@@ -90,6 +90,9 @@
                                                 <segment title="Match"/>
                                                 <segment title="Study"/>
                                             </segments>
+                                            <connections>
+                                                <action selector="matchStudySegment:" destination="vXZ-lx-hvc" eventType="valueChanged" id="R3E-b7-zMi"/>
+                                            </connections>
                                         </segmentedControl>
                                     </barButtonItem>
                                 </items>
@@ -143,6 +146,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="pDz-zf-EdN" id="MLY-2F-4pU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
