@@ -45,33 +45,31 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8y1-fZ-6bU">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wyc-W0-0RO">
                                                     <rect key="frame" x="5" y="5" width="140" height="140"/>
-                                                </button>
+                                                </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Wyc-W0-0RO" secondAttribute="trailing" constant="5" id="8Lt-Jx-Yia"/>
                                             <constraint firstAttribute="centerX" secondItem="ddN-vL-hsP" secondAttribute="centerX" id="MjI-Tf-cfv"/>
+                                            <constraint firstItem="Wyc-W0-0RO" firstAttribute="top" secondItem="0Po-pu-DLA" secondAttribute="top" constant="5" id="N3v-NA-w4X"/>
+                                            <constraint firstAttribute="bottom" secondItem="Wyc-W0-0RO" secondAttribute="bottom" constant="5" id="PQm-WB-maG"/>
+                                            <constraint firstItem="Wyc-W0-0RO" firstAttribute="leading" secondItem="0Po-pu-DLA" secondAttribute="leading" constant="5" id="Uco-kx-z05"/>
+                                            <constraint firstItem="ddN-vL-hsP" firstAttribute="top" secondItem="Wyc-W0-0RO" secondAttribute="bottom" constant="5" id="ZTv-bt-stJ"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="ddN-vL-hsP" secondAttribute="trailing" id="Ztx-kH-rOC"/>
-                                            <constraint firstAttribute="bottom" secondItem="8y1-fZ-6bU" secondAttribute="bottom" constant="5" id="dEF-OM-YFn"/>
                                             <constraint firstItem="ddN-vL-hsP" firstAttribute="leading" secondItem="0Po-pu-DLA" secondAttribute="leadingMargin" id="kRb-JD-vrb"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="8y1-fZ-6bU" secondAttribute="bottom" constant="5" id="kUR-gZ-yO9"/>
-                                            <constraint firstItem="8y1-fZ-6bU" firstAttribute="top" secondItem="0Po-pu-DLA" secondAttribute="topMargin" constant="5" id="tW2-n5-E4W"/>
-                                            <constraint firstItem="8y1-fZ-6bU" firstAttribute="leading" secondItem="0Po-pu-DLA" secondAttribute="leading" constant="5" id="vjl-SL-ztd"/>
                                             <constraint firstItem="ddN-vL-hsP" firstAttribute="bottom" secondItem="0Po-pu-DLA" secondAttribute="bottomMargin" constant="-5" id="wEJ-5O-RFg"/>
-                                            <constraint firstItem="8y1-fZ-6bU" firstAttribute="top" secondItem="0Po-pu-DLA" secondAttribute="top" constant="5" id="wpw-9Y-2sn"/>
-                                            <constraint firstAttribute="trailing" secondItem="8y1-fZ-6bU" secondAttribute="trailing" constant="5" id="zew-Sh-olW"/>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
-                                                <exclude reference="kUR-gZ-yO9"/>
-                                                <exclude reference="tW2-n5-E4W"/>
+                                                <exclude reference="ZTv-bt-stJ"/>
                                             </mask>
                                         </variation>
                                         <connections>
-                                            <outlet property="templeButton" destination="8y1-fZ-6bU" id="NrH-Dy-jGw"/>
+                                            <outlet property="templeImage" destination="Wyc-W0-0RO" id="jPr-dq-RX5"/>
                                             <outlet property="templeLabel" destination="ddN-vL-hsP" id="eEi-jT-Igo"/>
                                         </connections>
                                     </collectionViewCell>

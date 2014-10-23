@@ -25,11 +25,24 @@ class CollectionViewController : UIViewController, UICollectionViewDataSource, U
         
         if let cardCell = cell as? TemplePictureCollectionViewCell {
             let tempTemple = templeCollection.TEMPLES[indexPath.row]
-            cardCell.templeButton.setBackgroundImage(UIImage(named: tempTemple.filename), forState: .Normal)
+            cardCell.templeImage.image = UIImage(named: tempTemple.filename)
             cardCell.templeLabel.text = "\(tempTemple.name)"
         }
         
         return cell
+    }
+    
+    // MARK: Collection view other methods
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        
+        var templeCell = templeCollection.TEMPLES[indexPath.row]
+        
+        let size = UIImage(named: templeCell.filename)!.size
+        let height = CGFloat(140.00)
+        let width = height * size.width / size.height
+        
+        return CGSizeMake(width, height)
     }
     
     // MARK: Table view data source required
