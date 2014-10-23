@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0CE1C1F19F743FF001D46F6 /* TempleNameTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CE1C1E19F743FF001D46F6 /* TempleNameTableCell.swift */; };
+		A0CE1C2119F74449001D46F6 /* TableCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CE1C2019F74449001D46F6 /* TableCellViewController.swift */; };
 		A0DF734819F57FB500A25A3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DF734719F57FB500A25A3F /* AppDelegate.swift */; };
 		A0DF734D19F57FB500A25A3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0DF734B19F57FB500A25A3F /* Main.storyboard */; };
 		A0DF734F19F57FB500A25A3F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0DF734E19F57FB500A25A3F /* Images.xcassets */; };
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A0CE1C1E19F743FF001D46F6 /* TempleNameTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempleNameTableCell.swift; sourceTree = "<group>"; };
+		A0CE1C2019F74449001D46F6 /* TableCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCellViewController.swift; sourceTree = "<group>"; };
 		A0DF734219F57FB500A25A3F /* TempleMatchingProj3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempleMatchingProj3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DF734619F57FB500A25A3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0DF734719F57FB500A25A3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				A0DF736A19F5806100A25A3F /* CollectionViewController.swift */,
+				A0CE1C2019F74449001D46F6 /* TableCellViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -135,6 +140,7 @@
 				A0DF735019F57FB500A25A3F /* LaunchScreen.xib */,
 				A0DF734B19F57FB500A25A3F /* Main.storyboard */,
 				A0DF736C19F5A87500A25A3F /* TemplePictureCollectionViewCell.swift */,
+				A0CE1C1E19F743FF001D46F6 /* TempleNameTableCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -239,9 +245,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0CE1C1F19F743FF001D46F6 /* TempleNameTableCell.swift in Sources */,
 				A0DF736B19F5806100A25A3F /* CollectionViewController.swift in Sources */,
 				A0DF734819F57FB500A25A3F /* AppDelegate.swift in Sources */,
 				A0DF736D19F5A87500A25A3F /* TemplePictureCollectionViewCell.swift in Sources */,
+				A0CE1C2119F74449001D46F6 /* TableCellViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +441,7 @@
 				A0DF736319F57FB500A25A3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A0DF736419F57FB500A25A3F /* Build configuration list for PBXNativeTarget "TempleMatchingProj3Tests" */ = {
 			isa = XCConfigurationList;
@@ -441,6 +450,7 @@
 				A0DF736619F57FB500A25A3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
